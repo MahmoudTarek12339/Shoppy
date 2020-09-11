@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose file"
+        android:id="@+id/choose_btn"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_name"
+        android:layout_toRightOf="@id/choose_btn"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter file name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_price"
+        android:layout_below="@id/choose_btn"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter price"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_Real_price"
+        android:layout_below="@id/edt_price"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter file Real price"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_offer"
+        android:layout_below="@id/edt_Real_price"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter offer"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/img"
+        android:layout_below="@id/edt_offer"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:id="@+id/upload_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@id/upload_btn"
+        android:text="Show uploads"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:id="@+id/show_txt"/>
+</RelativeLayout>
